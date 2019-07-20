@@ -46,7 +46,7 @@ echo ""
 echo  "=========================================" |lolcat
 echo  $r "1.  Home Termux                        ÷${endc}";
 echo  "=========================================" |lolcat
-echo  $g "2.  Spam Call                          ÷${endc}";
+echo  $g "2.  IPlocator                          ÷${endc}";
 echo  "=========================================" |lolcat
 echo  $c "3.  Clone Yahoo                        ÷${endc}";
 echo  "=========================================" |lolcat
@@ -84,14 +84,16 @@ python2 run.py
 
 ;;
 
-#PP Guard Facebook
+#IPlocator
 
 2) apt update
 pkg install git
 pkg install php
-git clone https://github.com/SIIL3NT/spam
-cd spam
-
+pip2 install requests
+pkg install python2
+git clone https://github.com/rezadkim/IPLocation
+cd IPlocation
+python2 ip.py
 
 ;;
 
